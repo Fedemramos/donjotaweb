@@ -1,0 +1,21 @@
+{% extends "./comidas.html" %}
+{% load static %}
+
+{% block body_content %}
+
+<section class="platos">
+    <h2>Postres | Alfajores</h2>
+    <ul class="platos-lista">
+        {% for postre in postres %}
+            <li class="plato-item">
+                <article class="plato">
+                    <h3>{{ postre.nombre }}</h3>
+                    <p class="plato-descripcion">{{ postre.descripcion }}</p>
+                    <p class="plato-precio">Precio: ${{ postre.precio }}</p>
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}

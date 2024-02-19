@@ -1,0 +1,45 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menú del Restaurante</title>
+</head>
+
+
+<body class="menucomidas">
+    
+    <nav class="option-container">
+        <div class="option">
+            <a href="{% url 'almuerzo' %}">Sandwiches/Hamburguesas</a>
+        </div>
+        <div class="option">
+            <a href="{% url 'desayuno' %}">Desayuno/Merienda</a>
+        </div>
+        <div class="option">
+            <a href="{% url 'bebidas' %}">Bebidas</a>
+        </div>
+        <div class="option">
+            <a href="{% url 'cafeteria' %}">Cafeteria</a>
+        </div>
+        <div class="option">    
+            <a href="{% url 'ensalada' %}">Ensaladas</a>
+        </div>
+        <div class="option">
+            <a href="{% url 'postres' %}">Postres</a>
+        </div>
+    </nav>
+
+    {% block body_content %}{% endblock %}
+
+</body>
+
+</html>
+
+
+{% endblock %}

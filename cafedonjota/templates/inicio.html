@@ -1,0 +1,107 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="menuinicial">
+    <article class="inicio">
+        <img src="/static/images/logo.png" alt="Logo DonJota">
+        <h1>Todos los caminos conducen hacia nosotros</h1>
+        <div class="botton">
+            <a href="{% url 'almuerzo'%}">VER MENU</a>
+        </div>
+    </article>
+</section>
+    
+<section id="nosotros" class="cuerpo">
+    <article class="about">
+        <div class="content">
+            <h2>UN LUGAR DISTINTO</h2>
+            <p><strong>Bienvenidos a Don JOTA</strong>. Donde ofrecemos una experiencia diferente. 
+                Ya sea que esté aquí para un almuerzo o cena de negocios, celebrando una ocasión especial o buscando un ambiente 
+                distinto para reuniones o fechas especiales, nuestro menú ofrece algo para todos.</p>
+        </div>
+        <div class="imagesplace">
+            <img src="{% static 'images/about.jpg' %}" alt="Foto de donjota">
+        </div>
+    </article>
+</section>
+
+<section class= "main-space">
+    <h2>En DON JOTA te ofrecemos</h2>
+    <ul>
+        <li>
+            <img src="{% static 'images/1.jpg' %}" alt="Foto">
+            <div class="text">
+                <h3>Vista</h3>
+                <p>Contamos con un espacio exterior único y panorámico</p>
+            </div>
+        </li>
+        <li>
+            <img src="{% static 'images/2.jpg' %}" alt="Foto">
+            <div class="text">
+                <h3>Take away</h3>
+                <p>También podés venir y llevarte tu café</p>
+            </div>
+        </li>
+        <li>
+            <img src="{% static 'images/3.jpg' %}" alt="Foto">
+            <div class="text">
+                <h3>Postre de Balcarce</h3>
+                <p>Vení a probar nuestro postre de Balcarce o pedilo para llevar</p>
+            </div>
+        </li>
+    </ul>     
+</section>
+
+<section class="galeria">
+    <p>
+        Capturamos cada instante. 
+        Disfruta de nuestra galería, cada foto cuenta una historia única.
+    </p>
+    <article class="gallery-container">
+        <div class="gallery">
+            <img src="{% static 'images/gallery/foto-1.jpg' %}" alt="Foto donjota">
+            <img src="{% static 'images/gallery/foto-2.jpg' %}" alt="Foto donjota">
+            <img src="{% static 'images/gallery/foto-3.jpg' %}" alt="Foto donjota">
+            <img src="{% static 'images/gallery/foto-4.jpg' %}" alt="Foto donjota">
+            <img src="{% static 'images/gallery/foto-5.jpg' %}" alt="Foto donjota">
+            <img src="{% static 'images/gallery/foto-7.jpg' %}" alt="Foto donjota">
+            <!-- Añade más imágenes según sea necesario -->
+        </div>
+    </article>
+</section>    
+    
+<section class="info">
+    <h2>HORARIO DE ATENCION</h2>
+    <p><strong>Estamos abiertos todos los días de la semana.</strong></p>
+    <article class="hours">
+        <p>Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+        <p>Sábados y Domingos: 9:00 AM - 8:30 PM</p>
+        <p><strong>📍Balcarce / Cruce de ruta 226 y 55</strong></p>
+        <a href="https://www.google.com/maps/@-37.8182711,-58.2211253,304m/data=!3m1!1e3?entry=ttu" target="_blank">
+            VER UBICACION
+        </a>
+    </article>
+</section> 
+
+<section class="social">
+    <!-- Contenido de la parte izquierda (imagen del mapa) -->
+    <p>Si queres estar al dia con nuestros platos y servicios. Seguinos en:</p>
+        <div class="links">
+            <a href="https://www.facebook.com/people/Don-Jota/100076275163536/" target="_blank" title="Facebook">
+                <i class="fa-brands fa-square-facebook"></i> facebook
+            </a>
+            <a href="https://www.instagram.com/donjotacafe/" target="_blank" title="Instagram">
+                <i class="fa-brands fa-square-instagram"></i> instagram 
+            </a>
+        </div>
+        <div class="contacto">
+            <h2>Para más información, reseva o contácto:</h2>
+            <div class="numero">
+                <span>📞 02266 41-7401</span>
+            </div>
+        </div>  
+</section>
+
+
+{% endblock %}

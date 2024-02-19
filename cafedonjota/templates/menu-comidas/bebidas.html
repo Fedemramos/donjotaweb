@@ -1,0 +1,33 @@
+{% extends "./comidas.html" %}
+{% load static %}
+
+{% block body_content %}
+
+<section class="platos">
+    <ul class="platos-lista">
+        <h2>Bebida</h2>
+        {% for bebida in bebidas %}
+            <li class="plato-item">
+                <article class="plato">
+                    <h3>{{ bebida.nombre }}</h3>
+                    <p class="plato-descripcion">{{ bebida.descripcion }} </p>
+                    <p class="plato-precio">Precio: ${{ bebida.precio }}</p>
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+    <ul class="platos-lista">
+        <h2>Tragos</h2>
+        {% for trago in tragos %}
+            <li class="plato-item">
+                <article class="plato">
+                    <h3>{{ trago.nombre }}</h3>
+                    <p class="plato-descripcion">{{ trago.descripcion }} </p>
+                    <p class="plato-precio">Precio: ${{ trago.precio }}</p>
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}
