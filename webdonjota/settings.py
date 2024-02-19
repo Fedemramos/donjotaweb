@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary_storage',
-    'django.contrib.staticfiles',
     'cloudinary', 
     'cafedonjota'
 ]
@@ -134,8 +133,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Otros imports de Django
+
+
+# Configuración de Cloudinary
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'your_cloud_name',
     'API_KEY': 'your_api_key',
     'API_SECRET': 'your_api_secret'
 }
+
+# Configuración de Cloudinary como backend de almacenamiento de archivos estáticos y de medios
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
