@@ -1,0 +1,273 @@
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: grid; /* Cambia la dirección del flexbox a fila */
+        height: auto; /* Altura automática para adaptarse al contenido */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    nav a {
+        padding: 25px 30px; /* Ajusta el padding para dispositivos móviles */
+        margin: 0 10px; /* Ajusta el margen para dispositivos móviles */
+    }
+
+    footer {
+        max-width: 100%;
+        font-size: medium; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+
+    
+/* HTML menu - logo - boton */
+
+    .inicio {
+        background-image: url("/static/images/fondodonjota.5c57f3df6753.jpg"); /* Reemplaza con la ruta correcta de tu imagen de fondo */
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+        background-position: center; /* Centra la imagen dentro del contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        color: #ecf0f1;
+        text-align: center;
+        padding: 50px; /* Ajusta el relleno según sea necesario */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .inicio h1 {
+        color: #ecf0f1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 10px; /* Ajusta el espacio debajo del título */
+    }
+
+    .inicio img {
+        width: 100%; /* La imagen se ajustará al ancho de su contenedor */
+        max-width: 300px; /* Establece un límite máximo para el ancho de la imagen */
+        height: auto;
+        margin-top: 0%; /* Ajusta el margen superior en porcentaje */
+    }
+
+    .botton {
+        margin-top: 12%; /* Ajusta la distancia desde la parte superior en porcentaje */
+        margin-bottom: 5%;
+        text-align: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .botton a {
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 40px; /* Ajusta el padding para acercar los enlaces */
+        margin: 10px; /* Ajusta el margen para separar los enlaces */
+        border-radius: 8px;
+        background-color: #f7b02c;
+        transition: all 0.4s ease;
+        display: inline-block; /* Evita que el enlace ocupe todo el ancho */
+    }
+
+    .botton a:hover {
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+
+    /* Esto trabaja con el html about me*/
+
+    .cuerpo {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .content {
+        flex: 1;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        color: #0a0a0a;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
+        align-items: center;
+        max-width: 350px; /* Ajusta el ancho máximo del texto según sea necesario */
+        margin: 0 auto; /* Centra el texto horizontalmente */
+    }
+    
+    .imagesplace img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        margin-top: 40px; /* Ajusta el margen superior para separar el texto de la imagen */
+    }
+    
+    .about h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    /* Esto trabaja con el html my space */
+    .main-space {
+        width: 100%;
+        max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        padding-top: 30px;
+    }
+    
+    .main-space h2 {
+        padding-bottom: 20px;
+    }
+
+    .main-space ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .main-space li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; /* Espacio entre elementos */
+    }
+    
+    .main-space img {
+        width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        height: auto;
+        margin-right: 20px; /* Espacio entre imagen y texto */
+        border: 1px solid #ffffffd6;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .main-space h3{
+        color: #f7b02c;
+    }
+   
+    .main-space h3,
+    .main-space p {
+        font-size: large;
+        margin: 10px;
+    }
+
+
+    /* Esto trabaja con el html de galeria */
+    
+
+    .gallery-container {
+        width: 90%; /* Ancho del contenedor de la galería */
+        margin: 0 auto; /* Centrar el contenedor horizontalmente */
+        background-color: #f2f2f2; /* Color de fondo gris para el contenedor */
+        padding: 10px; /* Espaciado interno del contenedor */
+    }
+    
+    /* Estilos para el título de la galería */
+    .galeria p{
+        padding-top: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        text-align: center; /* Centrar el texto del título */
+        
+    }
+    
+    /* Estilos para la galería de imágenes */
+    .gallery {
+        display: grid; /* Utilizar el sistema de grid */
+        
+       
+    grid-template-columns: repeat(2, 1fr); /* Organizar en 2 columnas */
+        gap: 5px; /* Espacio entre las imágenes */
+    }
+    
+    /* Estilos para las imágenes de la galería */
+    .gallery img {
+        max-width: 100%; /* Ajustar el ancho máximo de las imágenes al 100% */
+        max-height: 500px; /* Establecer una altura máxima para las imágenes */
+        border-radius: 5px; /* Bordes redondeados */
+        display: block; /* Permite aplicar márgenes y centrado */
+    }
+   
+
+    .info {
+        padding-top: 40px; /* Reducir el espacio superior */
+    }
+
+    .info h2 {
+        font-size: large; /* Ajustar el tamaño del título */
+    }
+
+    .hours {
+        font-size: large; /* Ajustar el tamaño del texto */
+        padding-bottom: 30px; /* Reducir el espacio inferior */
+    }
+
+    .hours a {
+        margin-bottom: 15px; /* Reducir el espacio entre los botones */
+        padding: 8px 16px; /* Reducir el tamaño de los botones */
+        font-size: medium; /* Ajustar el tamaño del texto del botón */
+    }
+
+
+
+    /* Esto trabaja con el html de la info al final de la pagina */
+    
+    .info {
+        padding-top: 70px; /* Reducir el espacio superior */
+    }
+
+    .info h2 {
+        font-size: x-large; /* Ajustar el tamaño del título */
+    }
+
+    .hours {
+        font-size: x-large; /* Ajustar el tamaño del texto */
+        padding-bottom: 10px; /* Reducir el espacio inferior */
+    }
+
+    .hours a {
+        margin-bottom: 20px; /* Reducir el espacio entre los botones */
+        padding: 10px 16px; /* Reducir el tamaño de los botones */
+        font-size: large; /* Ajustar el tamaño del texto del botón */
+    }
+    
+    
+    /* Estilos para el final de pagina */
+    
+    .social {
+        font-size: large; /* Ajustar el tamaño de la fuente para dispositivos pequeños */
+        padding: 10px; /* Reducir el espaciado interno */
+        max-width: 90%; /* Reducir el ancho máximo del contenedor */
+    }
+
+    .social p {
+        font-size: large;
+        padding-bottom: 1px; /* Reducir el espaciado inferior del párrafo */
+    }
+
+    .links {
+        display: inline-block; /* Permite que los enlaces estén en línea */
+        padding-top: 0px;
+        
+    }
+    
+    .links a {
+        padding: 15px 40px;
+        margin: 10px 20px; /* Margen entre los enlaces */
+        text-decoration: none; /* Quita el subrayado del enlace */
+        color: #ffffff; /* Color del texto del enlace */
+        font-size: x-large; /* Tamaño de fuente deseado */
+    }
+
+    .contacto {
+        padding: 10px; /* Reducir el padding */
+        max-width: 90%; /* Reducir el ancho máximo del contenedor */
+    }
+
+    .contacto h2 {
+        font-size: large; /* Ajustar el tamaño de la fuente */
+        margin-bottom: 5px; /* Reducir el margen inferior */
+    }
+
+    .numero {
+        font-size: x-large; /* Ajustar el tamaño de la fuente */
+        padding: 5px; /* Reducir el padding */
+    }
+
+}
