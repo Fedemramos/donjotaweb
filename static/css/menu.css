@@ -176,12 +176,12 @@ footer {
 .main-space h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    margin-top: 70px; /* Espacio entre el título y el párrafo */
+    margin-top: 80px; /* Espacio entre el título y el párrafo */
     
 }
 
 .main-space h3 {
-    margin-top: 30px; /* Espacio entre el título y el párrafo */
+    margin-top: 40px; /* Espacio entre el título y el párrafo */
     font-size: x-large;
 }
 
