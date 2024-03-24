@@ -5,41 +5,51 @@
 
 <section class="platos">
     <h1>Sandwiches</h1>
+    <br>
+    <hr>
+   
     <ul class="platos-lista">
         {% for sandwiche in sandwiches %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ sandwiche.nombre }}</h3>
-                    <p class="plato-descripcion">{{ sandwiche.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ sandwiche.precio }}</p>
-                </article>
-            </li>
+        <div class="card">
+            <h5 class="card-header">{{ sandwiche.nombre }}</h5>
+            <div class="card-body">
+              <p class="card-text">{{ sandwiche.descripcion }}</p>
+              <p class="card-text"><strong>Precio: ${{ sandwiche.precio }}</strong></p>
+            </div>
+        </div>
+        <br>
         {% endfor %}
     </ul>
 
+    <br>
     <h1>Hamburguesas</h1>
+    <hr>
     <ul class="platos-lista">
         {% for hamburguesa in hamburguesas %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ hamburguesa.nombre }}</h3>
-                    <p class="plato-descripcion">{{ hamburguesa.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ hamburguesa.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ hamburguesa.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ hamburguesa.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ hamburguesa.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 
+    <br>
     <h1>Tapeos</h1>
+    <hr>
     <ul class="platos-lista">
         {% for tapeo in tapeos %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ tapeo.nombre }}</h3>
-                    <p class="plato-descripcion">{{ tapeo.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ tapeo.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ tapeo.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ tapeo.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ tapeo.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 </section>

@@ -4,29 +4,35 @@
 {% block body_content %}
 
 <section class="platos">
-    <h2>Desayuno | Merienda</h2>
+    <br>
+    <h5 class="card-title">Desayuno | Merienda</h5>
+    <br>
+    <hr>
     <ul class="platos-lista">
         {% for desayuno in desayunos %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ desayuno.nombre }}</h3>
-                    <p class="plato-descripcion">{{ desayuno.descripcion }}</p>
-                    <p class="plato-precio">Precio: ${{ desayuno.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ desayuno.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ desayuno.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ desayuno.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
-
-    <h2>Brusqueta </h2>
+    <br>
+    <h5 class="card-title">Brusqueta </h5>
+    <hr>
     <ul class="platos-lista">
         {% for brusqueta in brusquetas %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ brusqueta.nombre }}</h3>
-                    <p class="plato-descripcion">{{ brusqueta.descripcion }}</p>
-                    <p class="plato-precio">Precio: ${{ brusqueta.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ brusqueta.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ brusqueta.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ brusqueta.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 </section>

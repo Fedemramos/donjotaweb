@@ -1,0 +1,81 @@
+/* Esto trabaja con el html de menu de comidas */
+.cuerpoplatos{
+    background-image: url('/static/images/fondocafe.png');
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    /* Opcionalmente, puedes ajustar la posición de la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */ 
+    padding: 1px;
+}
+
+body.menucomidas {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+/* Estilos para la sección de platos */
+.platos {
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 100px;
+}
+
+.platos h2 {
+    margin-top: 100px; /* Ajusta el margen superior del título "Ensaladas" */
+}
+
+/* Lista de platos */
+.platos-lista {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin: 0 auto; /* Centra la lista horizontalmente */
+    width: 70%; /* Ancho de la lista de platos */
+}
+
+/* Estilos para cada elemento de plato */
+.plato-item {
+    margin-bottom: 30px; /* Ajusta el espacio entre los platos según tus necesidades */
+    display: block; /* Hace que los elementos aparezcan en una sola columna */
+}
+
+/* Estilos para el contenedor de cada plato */
+.plato {
+    background-color: #b2b2b2; /* Fondo gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 20px;
+    padding: 15px; /* Añade un espacio interno alrededor del contenido */
+    margin-bottom: 25px; /* Ajusta el espacio entre los platos */
+}
+
+/* Estilos para el título del plato */
+.plato h3 {
+    font-size: x-large;
+    margin-right: auto; /* Elimina el margen predeterminado del título del plato */
+    margin-bottom: 5px; /* Añade espacio entre el nombre y la descripción */
+    text-align: left;
+}
+
+/* Estilos para la descripción del plato */
+.plato-descripcion {
+    font-size: x-large;
+    margin-top: 5px; /* Añade espacio entre el nombre y la descripción */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el precio del plato */
+.plato-precio {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-bottom: 1px;
+    text-align: right;
+}
+
+.black-link {
+    color: black !important; /* Establece el color de texto a negro */
+}

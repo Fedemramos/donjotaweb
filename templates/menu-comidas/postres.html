@@ -4,16 +4,19 @@
 {% block body_content %}
 
 <section class="platos">
-    <h2>Postres | Alfajores</h2>
+    <h5 class="card-title">Postres | Alfajores</h5>
+    <br>
+    <hr>
     <ul class="platos-lista">
         {% for postre in postres %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ postre.nombre }}</h3>
-                    <p class="plato-descripcion">{{ postre.descripcion }}</p>
-                    <p class="plato-precio">Precio: ${{ postre.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ postre.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ postre.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ postre.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 </section>

@@ -6,26 +6,32 @@
 <section class="platos">
     <ul class="platos-lista">
         <h2>Bebida</h2>
+        <br>
+        <hr>
         {% for bebida in bebidas %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ bebida.nombre }}</h3>
-                    <p class="plato-descripcion">{{ bebida.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ bebida.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ bebida.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ bebida.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ bebida.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
     <ul class="platos-lista">
+        <br>
         <h2>Tragos</h2>
+        <hr>
         {% for trago in tragos %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ trago.nombre }}</h3>
-                    <p class="plato-descripcion">{{ trago.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ trago.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ trago.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ trago.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ trago.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 </section>

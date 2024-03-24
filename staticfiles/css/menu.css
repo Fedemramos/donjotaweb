@@ -219,38 +219,6 @@ ul li h3 {
 
 /* Esto trabaja con el html de galeria */
 
-    /* Estilos para el contenedor de la galería */
-.gallery-container {
-    width: 70%; /* Ancho del contenedor de la galería */
-    margin: 0 auto; /* Centrar el contenedor horizontalmente */
-    background-color: #f2f2f2; /* Color de fondo gris para el contenedor */
-    padding: 45px; /* Espaciado interno del contenedor */
-}
-
-/* Estilos para el título de la galería */
-
-.galeria p{
-    padding-top: 90px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-    text-align: center; /* Centrar el texto del título */
-}
-/* Estilos para la galería de imágenes */
-.gallery {
-    display: grid; /* Utilizar el sistema de grid */
-    grid-template-columns: repeat(2, 1fr); /* Organizar en 2 columnas */
-    gap: 40px; /* Espacio entre las imágenes */
-}
-
-/* Estilos para las imágenes de la galería */
-.gallery img {
-    max-width: 100%; /* Ajustar el ancho máximo de las imágenes al 100% */
-    max-height: 500px; /* Establecer una altura máxima para las imágenes */
-    border-radius: 20px; /* Bordes redondeados */
-    display: block; /* Permite aplicar márgenes y centrado */
-}
-
-
 
 
 /* Esto trabaja con el html de la info al final de la pagina */
@@ -367,4 +335,8 @@ ul li h3 {
     border-radius: 5px;
     font-size: xx-large;
     display: inline-block;
+}
+
+.black-link {
+    color: black;
 }

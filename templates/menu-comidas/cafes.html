@@ -6,15 +6,18 @@
 <section class="platos">
     <h1>Cafeteria</h1>
     <p>Opcional,<strong> leche de almendra</strong> </p>
+    <br>
+    <hr>
     <ul class="platos-lista">
         {% for cafe in cafeteria %}
-            <li class="plato-item">
-                <article class="plato">
-                    <h3>{{ cafe.nombre }}</h3>
-                    <p class="plato-descripcion">{{ cafe.descripcion }} </p>
-                    <p class="plato-precio">Precio: ${{ cafe.precio }}</p>
-                </article>
-            </li>
+            <div class="card">
+                <h5 class="card-header">{{ cafe.nombre }}</h5>
+                <div class="card-body">
+                <p class="card-text">{{ cafe.descripcion }}</p>
+                <p class="card-text"><strong>Precio: ${{ cafe.precio }}</strong></p>
+                </div>
+            </div>
+            <br>
         {% endfor %}
     </ul>
 </section>

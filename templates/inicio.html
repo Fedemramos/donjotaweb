@@ -4,6 +4,10 @@
 {% block content %}
 <section class="menuinicial">
     <article class="inicio">
+        <video autoplay muted loop class="video-fondo">
+            <source src="/static/video/video2.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+        </video>
         <img src="/static/images/logo.png" alt="Logo DonJota">
         <h1>Todos los caminos conducen hacia nosotros</h1>
         <div class="botton">
@@ -58,16 +62,29 @@
         Capturamos cada instante. 
         Disfruta de nuestra galería, cada foto cuenta una historia única.
     </p>
-    <article class="gallery-container">
-        <div class="gallery">
-            <img src="{% static 'images/gallery/foto-1.jpg' %}" alt="Foto donjota">
-            <img src="{% static 'images/gallery/foto-2.jpg' %}" alt="Foto donjota">
-            <img src="{% static 'images/gallery/foto-3.jpg' %}" alt="Foto donjota">
-            <img src="{% static 'images/gallery/foto-4.jpg' %}" alt="Foto donjota">
-            <img src="{% static 'images/gallery/foto-5.jpg' %}" alt="Foto donjota">
-            <img src="{% static 'images/gallery/foto-7.jpg' %}" alt="Foto donjota">
-            <!-- Añade más imágenes según sea necesario -->
+    <article>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/gallery/foto-1.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/gallery/foto-2.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/gallery/foto-3.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </article>
 </section>    
     
