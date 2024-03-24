@@ -1,19 +1,21 @@
 /* Esto trabaja con el html de menu de comidas */
-
+.cuerpoplatos{
+    background-image: url('/static/images/fondocafe.png');
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    /* Opcionalmente, puedes ajustar la posición de la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */ 
+    padding: 1px;
+}
 
 body.menucomidas {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     margin: 0;
     padding: 0;
-    background-color: #e1e1e1; /* Color de fondo para el cuerpo */
     text-align: center;
 }
 
-/* Estilo para el encabezado (h1) */
-h1 {
-    color: #333; /* Color del texto */
-}
 
 
 
@@ -72,4 +74,8 @@ h1 {
     font-size: x-large;
     margin-bottom: 1px;
     text-align: right;
+}
+
+.black-link {
+    color: black !important; /* Establece el color de texto a negro */
 }
